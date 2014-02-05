@@ -30,6 +30,6 @@ def validateCPF(doc)
 		sldoc = false
 	end
 
-	puts sldoc
+	sldoc
 
 end
