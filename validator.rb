@@ -2,7 +2,7 @@ def validateCPF(doc)
 
 	blacklist = ["00000000000", "11111111111", "22222222222", "33333333333", "44444444444", "55555555555", "66666666666", "77777777777", "88888888888", "99999999999" ]
 
-	if !blacklist.rindex(doc)
+	unless blacklist.rindex(doc)
 		sldoc = doc.slice(0..8).chars.to_a
 		sum = 0
 		(sldoc.reverse).each_with_index do |a, i|
